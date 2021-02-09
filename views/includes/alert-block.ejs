@@ -1,0 +1,9 @@
+<% if(locals.success || locals.error) { %>
+  <div class="alert <%= (success) ? 'alert-success' : 'alert-danger' %>" role="alert">
+    <% if(success) { %>
+      <h4 class="alert-heading"><%= success %></h4>
+    <% } else { %>
+      <h4 class="alert-heading"><%= error %></h4>
+    <% } %>
+  </div>
+<% } %>
